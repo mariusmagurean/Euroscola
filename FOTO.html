@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+  <title>Intalniri Bucovinene</title>
+  <style>
+  body {margin:0;}
+  h1 {
+    font-family: Comic Sans MS;
+    color: transparent;
+  }
+  .header {
+    background: url("clung.jpg")no-repeat top center ;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    width:auto;
+    height:100px;
+    padding: 1px;
+    text-align: center;
+    border-bottom: solid;
+    border-width: 5px;
+    border-color:	#708090;
+    margin-bottom: 0px;
+  }
+  .img1 {
+    width: 18px;
+}
+  #nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: 	#F5F5F5;
+	border-bottom: 1px solid #D3D3D3;  }
+#nav ul {
+	list-style: none;
+	width: 652px;
+	margin: 0 auto;
+	padding: 0; }
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+}
+
+.icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+}
+  .dropbtn {
+    background-color: white;
+    color: white;
+    padding: 5px 7px;
+    font-size: 16px;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F5F5F5;
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: grey;
+    padding: 1px 6px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #white}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+    border-right:1px solid #D3D3D3;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    color: #696969;
+    font-family: Courier
+    font-weight: bold;
+}
+
+li a:hover:not(.active2) {
+    background-color: #DCDCDC;
+
+}
+
+.active2 {
+    background-color: #5F9EA0;
+    color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  max-width:1980px;
+  max-height:1080px;
+  width: auto;
+  height: auto;
+
+}
+
+.container {
+  position: relative;
+  max-width:1024px;
+  max-height:768px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #696969;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+  height: 90px;
+  margin: 10px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+h2 {
+    margin: 40px 0 0 10;
+    font-family: Verdana;
+    font-weight: normal;
+    }
+
+</style>
+</head>
+<body>
+  <div class="dropdown" style="float:right;">
+  <button class="dropbtn"><img title="Romana" alt="Romana" src=flagro.jpg class="img1">  RO <img title="Sageata" alt="Sageata" src=sageata.png class="img1"></button>
+  <div class="dropdown-content">
+    <a href="#"><img title="English" alt="English" src=flageng.png class="img1"> EN</a>
+  </div>
+</div>
+  <div class="header">
+  <h1>
+   &#206;nt&#226;lniri Bucovinene </h1>
+</div>
+<div id="nav">
+  <ul>
+  <li><a href="acasa.html"><img title="English" alt="English" src=homeb.png class="img1" style="width:19,4px"></i></a></li>
+  <li><a class="active2" a href="FOTO.html">FOTO</a></li>
+  <li><a href="ORASUL.html">ORASUL</a></li>
+  <li><a href="INSCRIERE.html">INSCRIERE</a></li>
+  <li><a href="CONTACT.html">CONTACT</a></li>
+  <li><a href="PARERI.html">PARERI</a></li>
+</ul>
+</div>
+<h2 style="text-align:center">Galerie Foto</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+    <img src="foto1.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+    <img src="foto2.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+    <img src="foto3.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+    <img src="foto4.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+    <img src="foto5.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+    <img src="foto6.jpg" style="width:100%;height:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+    <img src="foto7.jpg" style="width:100%;height:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="foto1.jpg" style="width:100%;height:95px;" onclick="currentSlide(1)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto2.jpg" style="width:100%;height:95px;" onclick="currentSlide(2)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto3.jpg" style="width:100%;height:95px;" onclick="currentSlide(3)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto4.jpg" style="width:100%;height:95px;" onclick="currentSlide(4)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto5.jpg" style="width:100%;height:95px;" onclick="currentSlide(5)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto6.jpg" style="width:100%;height:95px;" onclick="currentSlide(6)" alt="Eticheta">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="foto7.jpg" style="width:100%;height:95px;" onclick="currentSlide(7)" alt="Eticheta">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
